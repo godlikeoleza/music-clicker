@@ -65,3 +65,58 @@ select {
   font-size: 18px;
   letter-spacing: 2px;
 }
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .clicker {
+    transition: transform 0.1s;
+  }
+  
+  .clicker.animate {
+    transform: scale(1.1);
+  }
+  
+  .note-display {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .note {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin: 2px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  .note-C { background-color: #FF6B6B; }
+  .note-D { background-color: #4ECDC4; }
+  .note-E { background-color: #45B7D1; }
+  .note-F { background-color: #F7B731; }
+  .note-G { background-color: #5D5D5D; }
+  .note-A { background-color: #6AB04C; }
+  .note-B { background-color: #EB4D4B; }
+  
+  .upgrades {
+    margin-top: 20px;
+  }
+  
+  .upgrades button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 14px;
+  }
+  
+  .upgrades button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }

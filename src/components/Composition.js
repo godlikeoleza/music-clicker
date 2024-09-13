@@ -2,9 +2,13 @@ import React from 'react';
 
 function Composition({ notes }) {
   return (
-    <div>
+    <div className="composition">
       <h2>Композиция:</h2>
-      <div>{notes.join(' ')}</div>
+      <div className="note-display">
+        {notes.map((note, index) => (
+          <span key={index} className={`note note-${note}`}>{note}</span>
+        ))}
+      </div>
     </div>
   );
 }
