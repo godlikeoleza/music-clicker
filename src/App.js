@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Clicker from './components/Clicker';
+import Composition from './components/Composition';
+import { baseInstruments } from './upgrades/baseInstruments';
+import './styles/App.css';
 
 function App() {
+  const [composition, setComposition] = useState([]);
+  const [currentInstrument, setCurrentInstrument] = useState(baseInstruments[0]);
+
+  const addNote = (note) => {
+    setComposition([...composition, note]);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Музыкальный Кликер</h1>
+      <Clicker addNote={addNote} instrument={currentInstrument} />
+      <Composition notes={composition} />
+      <select 
+        value={currentInstrument} 
+        onChange={(e) => setCurrentInstrument(e.target.value)}
+      >
+        {baseInstruments.map(instrument => (
+          <option key={instrument} value={instrument}>{instrument}</option>
+        ))}
+      </select>
     </div>
   );
 }

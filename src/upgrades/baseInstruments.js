@@ -1,0 +1,1 @@
+export const baseInstruments = ['sine', 'square', 'sawtooth', 'triangle'];
