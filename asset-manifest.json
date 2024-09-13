@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/music-clicker/static/css/main.0c073437.css",
+    "main.js": "/music-clicker/static/js/main.850a3dce.js",
+    "static/js/453.022fbbc1.chunk.js": "/music-clicker/static/js/453.022fbbc1.chunk.js",
+    "index.html": "/music-clicker/index.html",
+    "main.0c073437.css.map": "/music-clicker/static/css/main.0c073437.css.map",
+    "main.850a3dce.js.map": "/music-clicker/static/js/main.850a3dce.js.map",
+    "453.022fbbc1.chunk.js.map": "/music-clicker/static/js/453.022fbbc1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0c073437.css",
+    "static/js/main.850a3dce.js"
+  ]
+}
